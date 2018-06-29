@@ -1,0 +1,37 @@
+.limits {
+    background-color: $color-box-blue;
+    box-shadow: 0 1px 2px rgba(0,0,0, .3), 0 -1px 4px rgba(45,45,45, .15);
+    text-align: center;
+    margin-top: $xs-size;
+    padding: $xs-size 0;
+
+    &__column {
+        padding: 3px;
+
+        &:not(:last-child) {
+            border-right: .5px solid darken($color-secondary, 20%);
+
+            @media (max-width: 500px) {
+                border-bottom: .5px solid darken($color-secondary, 20%);
+                border-right: none;
+            }
+        }
+
+        > p {
+            margin: 0;
+            &:not(:last-child) {
+                padding-bottom: $xs-size;
+            }
+
+            @media (max-width) {
+                &:not(:last-child) {
+                    padding-bottom: 3px;
+                }  
+            }
+        }
+    }
+
+    @media (max-width: 980px) {
+        font-size: $font-size-s;
+    }
+}

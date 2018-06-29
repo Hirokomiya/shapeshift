@@ -1,0 +1,33 @@
+.qr {
+    text-align: center;
+    padding: $xs-size;
+    margin: 0 auto;
+    margin-top: $l-size;
+    width: 80%;
+
+    &__code {
+        background-position: top;
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0 auto;
+        margin-bottom: $s-size;
+
+        @media (max-width: 500px) {
+            margin-bottom: $xs-size;
+        }
+    }
+
+    &__label {
+        width: 100%;
+        color: darken($color-primary, $amount: 20%);
+        font-size: $font-size-l;
+        text-transform: capitalize;
+    }
+
+    @media (max-width: 450px) {
+        margin-top: $xs-size;
+        width: 100%;
+    }
+}

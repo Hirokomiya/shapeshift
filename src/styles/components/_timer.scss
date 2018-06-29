@@ -1,0 +1,36 @@
+.timer {
+    background-color: $color-box-blue;
+    border-bottom: .5px solid $color-success;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0,0,0, .25);
+    margin-top: $m-size;
+    text-align: center;
+    padding: $xs-size;
+    width: $timer-width;
+
+    &__label {
+        color: $color-secondary;
+        width: 100%;
+        text-transform: capitalize;
+    }
+    &__counter {
+        color: $color-highlight;
+        display: inline-block;
+        font-size: 150%;
+        width: 100%;
+    }
+
+    &--warning {
+        border-color: $color-warning;
+
+        .timer__counter {
+            color: $color-warning;
+            text-transform: capitalize;
+        }
+    }
+
+    @media(max-width: 500px) {
+        margin-top: $xs-size;
+        width: 100%;   
+    }
+}

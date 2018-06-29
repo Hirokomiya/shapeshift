@@ -1,0 +1,37 @@
+.header {
+    box-shadow: 0 2px 4px rgba(0,0,0, .15);
+    background-color: $color-blue-dark;
+    padding: $xs-size;
+    position: relative;
+
+    &__rate {
+        margin: 0 auto;
+        text-align: center;
+        white-space: nowrap;
+        width: 100%;
+        
+        @media (max-width: 440px) {
+            visibility: hidden;
+        }
+    }
+
+    &__selected {
+        margin: 0 auto;
+        text-align: center;
+        white-space: nowrap;
+        width: 100%;
+
+        @media(max-width: 770px) {
+            display: none;
+        }
+    }
+
+    &__dropdown {
+        position: absolute;
+        top: 50%;
+        right: $xs-size;
+        transform: translateY(-50%);
+        width: 60px;
+        z-index: 5000;
+    }
+}

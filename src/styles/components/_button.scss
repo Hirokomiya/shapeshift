@@ -1,0 +1,33 @@
+.btn {
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0, .15);
+    cursor: pointer;
+    padding: $m-size;
+    transition: all .3s;
+
+    &--primary {
+        background-color: $color-box-blue;
+        width: 100%;
+        color: $color-secondary;
+        font-size: $m-size;
+        text-transform: capitalize;
+
+        &:disabled {
+            cursor: default;
+            background-color: rgba($color-btn-primary, .8);
+        }
+        &:hover {
+            &:not(:disabled) {
+            box-shadow: 0 3px 6px rgba(0,0,0, .15);
+            transform: translateY(-2px);                
+            }
+        }
+
+        &:active {
+            box-shadow: 0 1px 2px rgba(0,0,0, .15);
+            transform: translateY(1px);
+            outline: none;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.checkbox {
+    width: 100%;
+    margin: auto;
+    padding: 0 $s-size;
+
+    &__check {
+        vertical-align: middle;
+    }
+
+    &__label {
+        color: $color-primary;
+        font-size: $s-size*1.2;
+        text-shadow: 2px;
+    }
+}

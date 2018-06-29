@@ -1,0 +1,29 @@
+.margin-top--small {
+    margin-top: $s-size;
+}
+
+.no-gutter {
+    &:not(:last-child) {
+        border-right: .5px solid gray;
+        box-shadow: -1px 0 6px rgba(0,0,0, .15), inset 1px 0 6px rgba(0,0,0, .15);
+    }
+}
+
+.selected-box {
+    border-bottom: 1.5px solid orange;
+}
+
+.hide {
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    width: 0;
+}
+
+.remove {
+    display: none;
+}
+
+.full-width {
+    width: 100%;
+}

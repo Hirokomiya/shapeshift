@@ -1,0 +1,35 @@
+.coin-info {
+    list-style-type: none;
+    padding: 0;
+
+    &__item {
+        font-weight: 600;
+        font-size: $font-size-s;
+        text-transform: capitalize;
+
+        &--positive {
+            color: $color-box-green;
+        }
+        &--negative {
+            color: lighten($color-warning, 10%);
+        }
+    }
+
+    &__title {
+        font-size: $m-size;
+        font-weight: 600;
+        margin: 0 auto;
+        text-transform: capitalize;
+
+        &--sub {
+            color: lighten($color-success, 10%);
+            font-size: $s-size * 1.4;
+            margin-top: $xs-size;
+        }
+    }
+
+    li {
+        width: 100%;
+        padding: 3px;
+    }
+}

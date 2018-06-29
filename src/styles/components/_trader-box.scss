@@ -1,0 +1,33 @@
+.trader-box {
+    margin: auto;
+    width: 100%;
+    padding: $s-size;
+    position: relative;
+
+    &__title {
+        color: $color-primary;
+        text-align: center;
+        text-transform: capitalize;
+        margin-top: $xs-size;
+    }
+
+    &__content {
+        display: none;
+        animation: fadeOut .5s ease;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__header {
+        background-color: $color-blue-dark;
+        border-radius: 5px 5px 0 0;
+        position: absolute;
+        padding-top: $xs-size;
+        top: 0;
+        left:0;
+        right: 0;
+    }
+
+}

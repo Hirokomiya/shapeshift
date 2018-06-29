@@ -1,0 +1,26 @@
+.text-primary {
+    color: lighten($color-primary, 15%);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.text-secondary {
+    color: $color-secondary;
+    text-transform: uppercase;
+}
+
+.text-tertiary {
+    color: $color-secondary;
+    text-transform: capitalize;
+    text-shadow: 2px;
+    font-weight: 400;
+    &__highlight {
+        color: $color-highlight;
+    }
+}
+
+.text-warning {
+    color: $color-warning;
+    text-transform: capitalize;
+    font-size: $font-size-s;
+}

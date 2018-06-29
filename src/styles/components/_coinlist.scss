@@ -1,0 +1,15 @@
+.coin-list {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    height: 100%;
+    
+    &__box {
+        background-color: darken($color-secondary, 2%);
+        border-bottom: 4px solid transparent;
+        color: $color-box-blue;
+        display: inline-block;
+        margin: $xs-size;
+        transition: all .3s ease;
+    }
+}

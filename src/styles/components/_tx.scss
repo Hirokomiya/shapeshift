@@ -1,0 +1,39 @@
+.tx {
+    padding: $s-size;
+
+    &__price {
+        color: $color-blue-dark;
+        font-weight: 600;
+    }
+    &__txt {
+        color: darken($color-primary, 20%);
+        text-transform: capitalize;
+        text-shadow: 3px rgba($color-primary, .8);
+        margin: $s-size auto;
+        margin-left: 0;
+        font-size: $m-size;
+    }
+    &__address {
+        color: $color-btn-primary;
+        margin-right: $xs-size;
+        word-break: break-all;
+    }
+    &__icon {
+        vertical-align: middle;
+        margin-right: $xs-size;
+    }
+    &__title {
+        color: darken($color-primary, 30%);
+        text-transform: capitalize;
+        margin-top: 0;
+    }
+    &__status {
+        
+        &--pending {
+            color: $color-primary;
+        }
+        &--error {
+            color: $color-warning;
+        }
+    }
+}

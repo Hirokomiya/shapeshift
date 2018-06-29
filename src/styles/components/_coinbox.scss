@@ -1,0 +1,55 @@
+.coin-box {
+    background-color: inherit;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: $xs-size;
+    text-align: center;
+    width: $box-width;
+    &__image {
+        display: block;
+        margin: auto;
+        width: 70%;
+        &--small {
+            background-color: $color-secondary;
+            width: $icon-size-large;
+            border-radius: 100%;
+            padding: $xs-size;
+            border: 3px solid $color-secondary;
+        }
+    }
+    &__label {
+        margin-top: 0;
+        text-transform: capitalize;
+        font-size: $m-size;
+        font-weight: 500;
+        opacity: .9;
+    }
+    &:hover,
+    &:active {
+        box-shadow: 0 3px 6px rgba(0,0,0, .15);
+    }
+    &--active {
+        box-shadow: 0 3px 6px rgba(0,0,0, .15);
+        border-bottom: 2px solid $color-highlight; 
+        @media (max-width: 770px) {
+            box-shadow: none;
+            border-bottom: none;
+        }
+    }
+    &--small {
+        height: $box-width * 1.1;
+    }
+
+    @media (max-width: 980px) {
+        font-size: $font-size-s;
+        width: $box-width-s;
+    }
+    @media (max-width: 770px) {
+        width: $box-width;
+    }
+    @media (max-width: 500px) {
+        font-size: $font-size-s;
+        width: $box-width-s;
+    }
+}

@@ -1,0 +1,13 @@
+.error {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 2*$font-size-s;
+
+    &__message {
+        color: $color-warning;
+        text-shadow: 3px $color-primary;
+        font-size: $font-size-s;
+    }
+}

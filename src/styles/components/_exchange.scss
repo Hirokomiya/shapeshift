@@ -1,0 +1,46 @@
+.exchange {
+    box-shadow: 0 3px 6px rgba(0,0,0, .15);
+    background-color: $color-box-blue;
+    color: lighten($color-primary, 15%);
+    margin: $l-size auto;
+    text-align: center;
+    padding: $m-size;
+    width: 100%;
+    @include clearfix;
+
+    i {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: $xs-size;
+        font-size: 180%;
+    }
+
+    &__pending {
+        animation: fadeOut 1s ease-in  infinite;
+        color: $color-secondary;
+    }
+
+    &__expired {
+        color: lighten($color-primary, 15%);;
+    }
+
+    &__confirmed {
+        color: $color-highlight;
+    }
+
+    &__label {
+        color: $color-secondary;
+        font-size: $font-size-s;
+        vertical-align: top;
+        text-transform: capitalize;
+        width: 100%;
+
+        @media (max-width: 500px) {
+            display: none;
+        }
+    }
+
+    &__icon {
+        margin: $xs-size;
+    }
+}
